@@ -27,9 +27,9 @@
     text-align: center;
 }
 
-#main_page.wait, 
-#main_page.wait ons-toolbar, 
-#main_page.wait ons-list-header, 
+#main_page.wait,
+#main_page.wait ons-toolbar,
+#main_page.wait ons-list-header,
 #main_page.wait ons-list-item,
 #main_page.wait ons-list-item label {
     cursor: wait;
@@ -37,4 +37,46 @@
 
 ons-splitter-content#main_content.split .sliding-menu-open-button {
     display: none;
+}
+
+.ginger-cat-photo-item {
+  background-image: url(/img/ginger-cat-photos/portrait/1.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; background-position:center center;
+  background-color: #CCC;
+  cursor: pointer;
+}
+.ginger-cat-photo-item.ginger-cat-1 {
+  background-image: url(/img/ginger-cat-photos/portrait/1.jpg);
+}
+.ginger-cat-photo-item.ginger-cat-2 {
+  background-image: url(/img/ginger-cat-photos/portrait/2.jpg);
+}
+.ginger-cat-photo-item.ginger-cat-3 {
+  background-image: url(/img/ginger-cat-photos/portrait/3.jpg);
+}
+.ginger-cat-photo-item.ginger-cat-4 {
+  background-image: url(/img/ginger-cat-photos/portrait/4.jpg);
+}
+.ginger-cat-photo-item.ginger-cat-5 {
+  background-image: url(/img/ginger-cat-photos/portrait/5.jpg);
+}
+
+@media (orientation: landscape) {
+  .ginger-cat-photo-item.ginger-cat-1 {
+    background-image: url(/img/ginger-cat-photos/landscape/1.jpg);
+  }
+  .ginger-cat-photo-item.ginger-cat-2 {
+    background-image: url(/img/ginger-cat-photos/landscape/2.jpg);
+  }
+  .ginger-cat-photo-item.ginger-cat-3 {
+    background-image: url(/img/ginger-cat-photos/landscape/3.jpg);
+  }
+  .ginger-cat-photo-item.ginger-cat-4 {
+    background-image: url(/img/ginger-cat-photos/landscape/4.jpg);
+  }
+  .ginger-cat-photo-item.ginger-cat-5 {
+    background-image: url(/img/ginger-cat-photos/landscape/5.jpg);
+  }
 }

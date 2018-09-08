@@ -1,9 +1,40 @@
 main_page = {
     key: "main_page",
-    data: {
-        message: "Hello, world!"
+    data() {
+      return {
+        carouselIndex: 0,
+        items: [
+          {
+            className: 'ginger-cat-1'
+          },
+          {
+            className: 'ginger-cat-2'
+          },
+          {
+            className: 'ginger-cat-3'
+          },
+          {
+            className: 'ginger-cat-4'
+          },
+          {
+            className: 'ginger-cat-5'
+          }
+        ],
+        dots: {
+          textAlign: 'center',
+          fontSize: '30px',
+          color: '#fff',
+          position: 'absolute',
+          bottom: '40px',
+          left: 0,
+          right: 0
+        }
+      };
     },
     methods: {
+      meow: function () {
+        console.log('meow')
+      },
         notify_to_about: function () {
             // https://onsen.io/v2/api/vue/$ons.notification.html
             vm.$ons.notification.confirm({
@@ -35,7 +66,7 @@ main_page = {
                     },
                 ]
             };
-            
+
             var _filters = [
                 {
                     name: "Open Document Spreadsheet",
@@ -44,7 +75,7 @@ main_page = {
             ];
 
             var _mime = "application/vnd.oasis.opendocument.spreadsheet";
-            
+
             try {
                 var _content = xlsx_helper_create("ods", _filename, _data);
                 hybird_app_helper.save_as(_filename, _content, _mime, _filters);

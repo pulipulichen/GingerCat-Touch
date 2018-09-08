@@ -1,7 +1,7 @@
 {
-  "name": "hybird-app",
+  "name": "GingerCat-Touch",
   "version": "1.0.0",
-  "description": "Hybird APP Framework",
+  "description": "Touch the Ginger Cat, and Meow",
   "main": "electron.js",
   "scripts": {
     "package-win": "electron-packager . hybird-app --overwrite --ignore=node_modules/* --platform=win32 --arch=x64 --version=1.0.0 --out=../electron-dist/hybird-app",

@@ -1,8 +1,8 @@
 hybird_app_loader = {
     controllers: {},
-    
+
     // -------------
-    
+
     ready: function () {
         var _this = this;
         var _loop = function (_i) {
@@ -29,7 +29,7 @@ hybird_app_loader = {
                 });
             } else {
                 //console.log("ok 1");
-                
+
                 _this.load_controller_template(function (_template) {
                     var _vue_setting = _this.build_vue_setting();
                     _vue_setting.template = _template;
@@ -41,35 +41,51 @@ hybird_app_loader = {
 
         _loop(0);
     },
-    
+
     build_vue_setting: function () {
         var _first_controller_name = CONFIG.controllers[0];
         var _first_controller = this.controllers[_first_controller_name];
 
+        var _data = {
+          pageStack: [_first_controller],
+        }
+
+        if (CONFIG.display_sliding_menu === true) {
+          _data['sliding_menu'] = sliding_menu
+        }
+
         var _vue_setting = {
             el: '#app',
-            data: {
-                pageStack: [_first_controller],
-                sliding_menu: sliding_menu
-            }
+            data: _data
             //created: _callback
         };
-        
+
         return _vue_setting;
     },
     load_controller_template: function (_callback) {
         //console.log("load_controller_template 1 ");
-        $.get('core/hybird_app_loader.html', function (_controller_template) {
-            //console.log("load_controller_template 2");
-            $.get('controllers/sliding_menu.html', function (_sliding_menu_template) {
-                //console.log("load_controller_template 3");
-                _controller_template = _controller_template.replace('<v-ons-splitter-side />', _sliding_menu_template);
-                //console.log("load_controller_template 4");
-                _callback(_controller_template);
-            });
+        var _loader_path = 'core/hybird_app_loader.html'
+        if (CONFIG.display_sliding_menu === true) {
+          _loader_path = 'core/hybird_app_loader_sliding_menu'
+        }
+
+        $.get(_loader_path, function (_controller_template) {
+            // console.log("load_controller_template 2");
+            if (CONFIG.controllers.indexOf("sliding_menu") > -1) {
+              $.get('controllers/sliding_menu.html', function (_sliding_menu_template) {
+                  // console.log("load_controller_template 3")
+                  _controller_template = _controller_template.replace('<v-ons-splitter-side />', _sliding_menu_template)
+                  // console.log("load_controller_template 4")
+                  _callback(_controller_template)
+              })
+            }
+            else {
+              _callback(_controller_template)
+            }
+
         });
     },
-    
+
     vue_create: function () {
         var _this = hybird_app_loader;
         $(function () {
@@ -85,7 +101,7 @@ hybird_app_loader = {
             }
 
             vue_create_event();
-            
+
             //_backspace_bind();
             document.title = i18n.t("TITLE");
             setTimeout(function () {
@@ -150,7 +166,7 @@ if (hybird_app_helper.detect_mode() === "mobile") {
     document.addEventListener("deviceready",function () {
         //alert("READY 0250");
         //alert(cordova.file);
-        
+
         if (typeof(CONFIG.debug) !== "string") {
             hybird_app_loader.ready();
         }

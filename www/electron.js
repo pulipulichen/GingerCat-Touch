@@ -31,12 +31,12 @@ function createWindow () {
     //mainWindow.loadURL(url);
     mainWindow.$ = mainWindow.jQuery = require("./lib/jquery/jquery.min.js");
     mainWindow.loadURL('file://' + __dirname + '/index.html');
-    
+
     mainWindow.on('closed', function () {
         mainWindow = null;
         app.quit();
     });
-    
+
     // Tray
     appIcon = new Tray(config.icon)
     const contextMenu = Menu.buildFromTemplate([
@@ -59,12 +59,11 @@ function createWindow () {
                 if (config.kiosk === true) {
                     return;
                 }
-
                 if (mainWindow.webContents.isLoading()) {
                     mainWindow.webContents.stop();
                 }
                 else {
-                    dialog.showMessageBox({ type: 'question', buttons: ["YES", "NO"], 
+                    dialog.showMessageBox({ type: 'question', buttons: ["YES", "NO"],
                         message: "Are you sure to exit?"},
                         function (buttonIndex) {
                             if (buttonIndex === 0) {
@@ -103,8 +102,8 @@ function createWindow () {
     mainWindow.on('blur', function () {
         globalShortcut.unregisterAll();
     });
-    
-    
+
+
 }
 
 app.on('ready', createWindow);

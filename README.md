@@ -9,7 +9,7 @@ Touching the Ginger cat to hear his mew.
 
 # Package Results
 -   Web
-    *   <https://pulipulichen.github.io/HTML5-Hybird-APP-Framework/www/>
+    *   <https://pulipulichen.github.io/GingerCat-Touch/www/>
     *   <https://bit.ly/2kj3XAv>
 -   Windows x64
     *   Download: <https://drive.google.com/file/d/1HRjAkyXuqqBhaLRoEEe7cPKjpGdj3Wbv/view?usp=sharing>
@@ -58,7 +58,7 @@ npm install asar
 
 `./www/electron-config.json`
 
--   請修改webapp-config.json設定檔，主要修改URL屬性
+-   請修改electron-config.json設定檔，主要修改URL屬性
 
 請務必確認JSON格式是否正確：使用JSONLint驗證 <http://jsonlint.com/>
 

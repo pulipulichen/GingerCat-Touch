@@ -1,7 +1,7 @@
 {
-    "width": 800, 
-    "height": 600, 
-    "skipTaskbar": false, 
+    "width": 480,
+    "height": 800, 
+    "skipTaskbar": false,
     "frame": true,
     "kiosk": false,
     "title": "Hybird APP",

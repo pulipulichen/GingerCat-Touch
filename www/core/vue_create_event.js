@@ -14,7 +14,7 @@ vue_create_event = function () {
     //    alert(c);
     //});
     //electron_helper.save_local_file(_file, _content);
-    
+
     /*
     var _filename = "test.ods";
     var _data = {
@@ -44,14 +44,18 @@ vue_create_event = function () {
 
     var _mime = "application/vnd.oasis.opendocument.spreadsheet";
     var _content = xlsx_helper_create("ods", _filename, _data);
-    
+
     var _file = "D:/Desktop/test.ods";
     //electron_helper.save_local_file(_file, _content);
-    
+
     electron_helper.load_local_file(_file, function (_base64_content) {
         xlsx_helper_open_file(_base64_content, function (_json_content) {
             alert(JSON.stringify(_json_content));
         });
     });
     */
-};
+
+
+    main_page.methods.init()
+
+}

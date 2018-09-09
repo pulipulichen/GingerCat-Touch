@@ -1,17 +1,17 @@
 /* eslint-disable */
 main_page = {
     key: "main_page",
-    data() {
-      let items = [
+    data: {
+      items: [
         {
           className: 'ginger-cat-1',
-          audios: [
+          audioPaths: [
             '/img/ginger-cat-audios/1.mp3'
           ]
         },
         {
           className: 'ginger-cat-2',
-          audios: [
+          audioPaths: [
             '/img/ginger-cat-audios/2a.mp3',
             '/img/ginger-cat-audios/2b.mp3',
             '/img/ginger-cat-audios/2c.mp3',
@@ -21,13 +21,13 @@ main_page = {
         },
         {
           className: 'ginger-cat-3',
-          audios: [
+          audioPaths: [
             '/img/ginger-cat-audios/3.mp3'
           ]
         },
         {
           className: 'ginger-cat-4',
-          audios: [
+          audioPaths: [
             '/img/ginger-cat-audios/4a.mp3',
             '/img/ginger-cat-audios/4b.mp3',
             '/img/ginger-cat-audios/4c.mp3',
@@ -36,7 +36,62 @@ main_page = {
         },
         {
           className: 'ginger-cat-5',
-          audios: [
+          audioPaths: [
+            '/img/ginger-cat-audios/5a.mp3',
+            '/img/ginger-cat-audios/5b.mp3',
+            '/img/ginger-cat-audios/5c.mp3'
+          ]
+        }
+      ],
+      carouselIndex: 0,
+      audioIndex: 0,
+      dots: {
+        textAlign: 'center',
+        fontSize: '30px',
+        color: '#fff',
+        position: 'absolute',
+        bottom: '40px',
+        left: 0,
+        right: 0
+      }
+    },
+    /*
+    () => {
+      let items = [
+        {
+          className: 'ginger-cat-1',
+          audioPaths: [
+            '/img/ginger-cat-audios/1.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-2',
+          audioPaths: [
+            '/img/ginger-cat-audios/2a.mp3',
+            '/img/ginger-cat-audios/2b.mp3',
+            '/img/ginger-cat-audios/2c.mp3',
+            '/img/ginger-cat-audios/2d.mp3',
+            '/img/ginger-cat-audios/2e.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-3',
+          audioPaths: [
+            '/img/ginger-cat-audios/3.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-4',
+          audioPaths: [
+            '/img/ginger-cat-audios/4a.mp3',
+            '/img/ginger-cat-audios/4b.mp3',
+            '/img/ginger-cat-audios/4c.mp3',
+            '/img/ginger-cat-audios/4d.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-5',
+          audioPaths: [
             '/img/ginger-cat-audios/5a.mp3',
             '/img/ginger-cat-audios/5b.mp3',
             '/img/ginger-cat-audios/5c.mp3'
@@ -46,6 +101,7 @@ main_page = {
 
       return {
         carouselIndex: Math.floor(Math.random() * (items.length)),
+        audioIndex: 0,
         items: items,
         dots: {
           textAlign: 'center',
@@ -58,12 +114,45 @@ main_page = {
         }
       };
     },
+    */
     methods: {
+      init: () => {
+        main_page.data.carouselIndex = Math.floor(Math.random() * (main_page.data.items.length))
+      },
       onchange: function () {
-        console.log(main_page.data.carouselIndex)
+        if (typeof main_page.data !== 'object') {
+          return
+        }
+
+        main_page.data.audioIndex = 0;
+
+        let carouselIndex = main_page.data.carouselIndex
+        let item = main_page.data.items[carouselIndex]
+
+        // 物件化所有的聲音
+        if (typeof item.audioObjects === 'undefined') {
+          item.audioObjects = []
+          item.audioPaths.forEach((path) => {
+            item.audioObjects.push(new Audio(path))
+          })
+        }
+
+        // console.log(main_page.data.carouselIndex)
       },
       meow: function () {
-        console.log('meow')
+        let carouselIndex = main_page.data.carouselIndex
+        let item = main_page.data.items[carouselIndex]
+        let audioIndex = main_page.data.audioIndex
+
+        item.audioObjects[audioIndex].play()
+
+        main_page.data.audioIndex++;
+
+        if (main_page.data.audioIndex === item.audioObjects.length) {
+          main_page.data.audioIndex = 0;
+        }
+
+        // console.log(audioIndex)
       },
         notify_to_about: function () {
             // https://onsen.io/v2/api/vue/$ons.notification.html
@@ -115,4 +204,4 @@ main_page = {
             }
         }
     }
-};
+}

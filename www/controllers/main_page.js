@@ -1,25 +1,52 @@
+/* eslint-disable */
 main_page = {
     key: "main_page",
     data() {
+      let items = [
+        {
+          className: 'ginger-cat-1',
+          audios: [
+            '/img/ginger-cat-audios/1.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-2',
+          audios: [
+            '/img/ginger-cat-audios/2a.mp3',
+            '/img/ginger-cat-audios/2b.mp3',
+            '/img/ginger-cat-audios/2c.mp3',
+            '/img/ginger-cat-audios/2d.mp3',
+            '/img/ginger-cat-audios/2e.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-3',
+          audios: [
+            '/img/ginger-cat-audios/3.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-4',
+          audios: [
+            '/img/ginger-cat-audios/4a.mp3',
+            '/img/ginger-cat-audios/4b.mp3',
+            '/img/ginger-cat-audios/4c.mp3',
+            '/img/ginger-cat-audios/4d.mp3'
+          ]
+        },
+        {
+          className: 'ginger-cat-5',
+          audios: [
+            '/img/ginger-cat-audios/5a.mp3',
+            '/img/ginger-cat-audios/5b.mp3',
+            '/img/ginger-cat-audios/5c.mp3'
+          ]
+        }
+      ];
+
       return {
-        carouselIndex: 0,
-        items: [
-          {
-            className: 'ginger-cat-1'
-          },
-          {
-            className: 'ginger-cat-2'
-          },
-          {
-            className: 'ginger-cat-3'
-          },
-          {
-            className: 'ginger-cat-4'
-          },
-          {
-            className: 'ginger-cat-5'
-          }
-        ],
+        carouselIndex: Math.floor(Math.random() * (items.length)),
+        items: items,
         dots: {
           textAlign: 'center',
           fontSize: '30px',
@@ -32,6 +59,9 @@ main_page = {
       };
     },
     methods: {
+      onchange: function () {
+        console.log(main_page.data.carouselIndex)
+      },
       meow: function () {
         console.log('meow')
       },

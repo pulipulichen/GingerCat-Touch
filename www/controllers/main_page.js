@@ -45,6 +45,7 @@ main_page = {
       ],
       carouselIndex: 0,
       audioIndex: 0,
+      audioPlaying: false,
       dots: {
         textAlign: 'center',
         fontSize: '30px',
@@ -55,66 +56,6 @@ main_page = {
         right: 0
       }
     },
-    /*
-    () => {
-      let items = [
-        {
-          className: 'ginger-cat-1',
-          audioPaths: [
-            'img/ginger-cat-audios/1.mp3'
-          ]
-        },
-        {
-          className: 'ginger-cat-2',
-          audioPaths: [
-            'img/ginger-cat-audios/2a.mp3',
-            'img/ginger-cat-audios/2b.mp3',
-            'img/ginger-cat-audios/2c.mp3',
-            'img/ginger-cat-audios/2d.mp3',
-            'img/ginger-cat-audios/2e.mp3'
-          ]
-        },
-        {
-          className: 'ginger-cat-3',
-          audioPaths: [
-            'img/ginger-cat-audios/3.mp3'
-          ]
-        },
-        {
-          className: 'ginger-cat-4',
-          audioPaths: [
-            'img/ginger-cat-audios/4a.mp3',
-            'img/ginger-cat-audios/4b.mp3',
-            'img/ginger-cat-audios/4c.mp3',
-            'img/ginger-cat-audios/4d.mp3'
-          ]
-        },
-        {
-          className: 'ginger-cat-5',
-          audioPaths: [
-            'img/ginger-cat-audios/5a.mp3',
-            'img/ginger-cat-audios/5b.mp3',
-            'img/ginger-cat-audios/5c.mp3'
-          ]
-        }
-      ];
-
-      return {
-        carouselIndex: Math.floor(Math.random() * (items.length)),
-        audioIndex: 0,
-        items: items,
-        dots: {
-          textAlign: 'center',
-          fontSize: '30px',
-          color: '#fff',
-          position: 'absolute',
-          bottom: '40px',
-          left: 0,
-          right: 0
-        }
-      };
-    },
-    */
     methods: {
       init: () => {
         main_page.data.carouselIndex = Math.floor(Math.random() * (main_page.data.items.length))
@@ -140,11 +81,21 @@ main_page = {
         // console.log(main_page.data.carouselIndex)
       },
       meow: function () {
+        if (main_page.data.audioPlaying === true) {
+          return
+        }
+
         let carouselIndex = main_page.data.carouselIndex
         let item = main_page.data.items[carouselIndex]
         let audioIndex = main_page.data.audioIndex
 
         item.audioObjects[audioIndex].play()
+        main_page.data.audioPlaying = true
+        $('body').toggleClass('wait')
+        setTimeout(() => {
+          main_page.data.audioPlaying = false
+          $('body').toggleClass('wait')
+        }, item.audioObjects[audioIndex].duration * 1000)
 
         main_page.data.audioIndex++;
 

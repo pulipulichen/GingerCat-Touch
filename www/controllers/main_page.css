@@ -80,3 +80,7 @@ ons-splitter-content#main_content.split .sliding-menu-open-button {
     background-image: url(../img/ginger-cat-photos/landscape/5.jpg);
   }
 }
+
+body.wait .ginger-cat-photo-item {
+  cursor: wait !important;
+}

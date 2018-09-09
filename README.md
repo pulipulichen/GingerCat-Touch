@@ -10,7 +10,7 @@ Touching the Ginger cat to hear his mew.
 # Package Results
 -   Web
     *   <https://pulipulichen.github.io/GingerCat-Touch/www/>
-    *   <https://bit.ly/2kj3XAv>
+    *   <https://bit.ly/2Me5seP>
 -   Windows x64
     *   Download: <https://drive.google.com/file/d/1HRjAkyXuqqBhaLRoEEe7cPKjpGdj3Wbv/view?usp=sharing>
     *   Package by 7-zip: <https://portableapps.com/apps/utilities/7-zip_portable>

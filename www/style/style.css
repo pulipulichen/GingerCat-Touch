@@ -125,6 +125,7 @@ body.loading {
     background-image: url(../img/icon.png);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: wait;
 }
 
 
@@ -145,4 +146,3 @@ body.loading {
     line-height: normal !important;
 }
 */
-

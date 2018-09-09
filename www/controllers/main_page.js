@@ -6,40 +6,40 @@ main_page = {
         {
           className: 'ginger-cat-1',
           audioPaths: [
-            '../img/ginger-cat-audios/1.mp3'
+            'img/ginger-cat-audios/1.mp3'
           ]
         },
         {
           className: 'ginger-cat-2',
           audioPaths: [
-            '../img/ginger-cat-audios/2a.mp3',
-            '../img/ginger-cat-audios/2b.mp3',
-            '../img/ginger-cat-audios/2c.mp3',
-            '../img/ginger-cat-audios/2d.mp3',
-            '../img/ginger-cat-audios/2e.mp3'
+            'img/ginger-cat-audios/2a.mp3',
+            'img/ginger-cat-audios/2b.mp3',
+            'img/ginger-cat-audios/2c.mp3',
+            'img/ginger-cat-audios/2d.mp3',
+            'img/ginger-cat-audios/2e.mp3'
           ]
         },
         {
           className: 'ginger-cat-3',
           audioPaths: [
-            '../img/ginger-cat-audios/3.mp3'
+            'img/ginger-cat-audios/3.mp3'
           ]
         },
         {
           className: 'ginger-cat-4',
           audioPaths: [
-            '../img/ginger-cat-audios/4a.mp3',
-            '../img/ginger-cat-audios/4b.mp3',
-            '../img/ginger-cat-audios/4c.mp3',
-            '../img/ginger-cat-audios/4d.mp3'
+            'img/ginger-cat-audios/4a.mp3',
+            'img/ginger-cat-audios/4b.mp3',
+            'img/ginger-cat-audios/4c.mp3',
+            'img/ginger-cat-audios/4d.mp3'
           ]
         },
         {
           className: 'ginger-cat-5',
           audioPaths: [
-            '../img/ginger-cat-audios/5a.mp3',
-            '../img/ginger-cat-audios/5b.mp3',
-            '../img/ginger-cat-audios/5c.mp3'
+            'img/ginger-cat-audios/5a.mp3',
+            'img/ginger-cat-audios/5b.mp3',
+            'img/ginger-cat-audios/5c.mp3'
           ]
         }
       ],
@@ -61,40 +61,40 @@ main_page = {
         {
           className: 'ginger-cat-1',
           audioPaths: [
-            '../img/ginger-cat-audios/1.mp3'
+            'img/ginger-cat-audios/1.mp3'
           ]
         },
         {
           className: 'ginger-cat-2',
           audioPaths: [
-            '../img/ginger-cat-audios/2a.mp3',
-            '../img/ginger-cat-audios/2b.mp3',
-            '../img/ginger-cat-audios/2c.mp3',
-            '../img/ginger-cat-audios/2d.mp3',
-            '../img/ginger-cat-audios/2e.mp3'
+            'img/ginger-cat-audios/2a.mp3',
+            'img/ginger-cat-audios/2b.mp3',
+            'img/ginger-cat-audios/2c.mp3',
+            'img/ginger-cat-audios/2d.mp3',
+            'img/ginger-cat-audios/2e.mp3'
           ]
         },
         {
           className: 'ginger-cat-3',
           audioPaths: [
-            '../img/ginger-cat-audios/3.mp3'
+            'img/ginger-cat-audios/3.mp3'
           ]
         },
         {
           className: 'ginger-cat-4',
           audioPaths: [
-            '../img/ginger-cat-audios/4a.mp3',
-            '../img/ginger-cat-audios/4b.mp3',
-            '../img/ginger-cat-audios/4c.mp3',
-            '../img/ginger-cat-audios/4d.mp3'
+            'img/ginger-cat-audios/4a.mp3',
+            'img/ginger-cat-audios/4b.mp3',
+            'img/ginger-cat-audios/4c.mp3',
+            'img/ginger-cat-audios/4d.mp3'
           ]
         },
         {
           className: 'ginger-cat-5',
           audioPaths: [
-            '../img/ginger-cat-audios/5a.mp3',
-            '../img/ginger-cat-audios/5b.mp3',
-            '../img/ginger-cat-audios/5c.mp3'
+            'img/ginger-cat-audios/5a.mp3',
+            'img/ginger-cat-audios/5b.mp3',
+            'img/ginger-cat-audios/5c.mp3'
           ]
         }
       ];

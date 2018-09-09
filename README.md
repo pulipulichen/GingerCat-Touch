@@ -106,9 +106,10 @@ openDevTools決定是否預設開啟偵錯工具
 
 -   <https://ide.monaca.mobi/editor/5b05cedae78885af578b456c>
 
-## Icon Slayer
+## Icon Tools
 
--   <https://www.gieson.com/Library/projects/utilities/icon_slayer/>
+-   Icon Slayer: <https://www.gieson.com/Library/projects/utilities/icon_slayer/>
+-   iConvert Icons: <https://iconverticons.com/online/>
 
 ## Meow sound effect
 

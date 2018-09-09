@@ -45,7 +45,7 @@ ons-splitter-content#main_content.split .sliding-menu-open-button {
   background-size: cover;
   background-repeat: no-repeat; background-position:center center;
   background-color: #CCC;
-  cursor: pointer;
+  cursor: -webkit-grab;
 }
 .ginger-cat-photo-item.ginger-cat-1 {
   background-image: url(/img/ginger-cat-photos/portrait/1.jpg);

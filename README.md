@@ -16,6 +16,7 @@ Touching the Ginger cat to hear he mew.
     *   Package by 7-zip: <https://portableapps.com/apps/utilities/7-zip_portable>
     *   Upload (for owner): <https://drive.google.com/open?id=1a6BvxOecz9izGz5UFxZetxwgD5TmsGX6>
 -   Mobile APP:
+    *   Google Play: <https://play.google.com/store/apps/details?id=gingercat_touch_app.pulipuli.info>
     *   Install: <https://build.phonegap.com/apps/3297046/install>
     *   APK: <https://build.phonegap.com/apps/3297046/download/android>
     *   Install shorten URL: <https://bit.ly/2MfXCRH>

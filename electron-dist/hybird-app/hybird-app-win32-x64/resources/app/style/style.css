@@ -1,0 +1,148 @@
+ons-toolbar h1 {
+    font-size: 1em;
+    margin: 0;
+    font-weight: bold;
+}
+ons-toolbar ons-toolbar-bottom, ons-back-button {
+    cursor: pointer;
+}
+
+ons-list-item[modifier="chevron"],
+ons-list-item.list-item--chevron {
+    cursor: pointer;
+}
+
+ons-list-item label.vertical-top {
+    display: inline;
+    padding-top: 1rem;
+}
+
+.panel {
+    margin-top: 0.5em !important;
+}
+
+.cursor-pointer, ons-button {
+    cursor: pointer !important;
+}
+
+ons-list-item ons-input {
+    width: 100%;
+}
+
+ons-list-item ons-select {
+    text-align: right;
+}
+
+ons-list-item ons-select > select {
+    width: auto;
+}
+
+ons-list-item.failed {
+    background-color: #F3969A;
+    color: white;
+}
+ons-list-item.failed .button--quiet,
+ons-list-item.failed input,
+ons-list-item.failed ons-icon,
+ons-list-item.failed input:disabled {
+    color: white !important;
+}
+
+ons-list-item.failed.list-item--chevron:before {
+    border-color: white;
+}
+
+ons-list-item ons-select {
+    width: 100%;
+}
+
+.selectable {
+    -webkit-user-select: text !important;
+    cursor: auto !important;
+}
+
+.vertical-top {
+    vertical-align: top !important;
+}
+
+/*
+ons-list-item > .left {
+    border-bottom: 1px solid #ccc;
+    width: 9rem;
+}
+*/
+
+ons-list-item > .left.icon {
+    width: auto;
+}
+
+ons-list-item {
+    padding-right: 14px !important;
+}
+
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.invisible.visible {
+    visibility: visible;
+}
+
+.text-overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+
+.platform-webview ons-fab .fab__icon {
+    /*margin-top: -10px !important;*/
+    line-height: 3.5rem !important;
+    display: inline;
+    /*border: 1px solid green;*/
+    box-sizing: initial !important;
+}
+
+.platform-webview ons-fab .fab__icon ons-icon {
+    /*margin-top: -10px !important;*/
+    line-height: normal !important;
+    display: inline;
+    /*border: 1px solid red;*/
+    box-sizing: initial !important;
+}
+
+.platform-webview ons-fab {
+    /*margin-top: -10px !important;*/
+    line-height: normal !important;
+}
+
+body.loading {
+    background-image: url(../img/icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: wait;
+}
+
+
+/*
+.platform-webview ons-fab .fab__icon {
+    line-height: 3.5rem !important;
+    display: inline;
+    box-sizing: initial !important;
+}
+
+.platform-webview ons-fab .fab__icon ons-icon {
+    line-height: normal !important;
+    display: inline;
+    box-sizing: initial !important;
+}
+
+.platform-webview ons-fab {
+    line-height: normal !important;
+}
+*/

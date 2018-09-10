@@ -1,10 +1,10 @@
 {
-  "name": "GingerCat-Touch",
+  "name": "hybird-app",
   "version": "1.0.0",
-  "description": "Touch the Ginger Cat, and Meow",
+  "description": "Hybird APP Framework",
   "main": "electron.js",
   "scripts": {
-    "package-win": "electron-packager . hybird-app --overwrite --ignore=node_modules/* --platform=win32 --arch=x64 --version=1.0.0 --out=../electron-dist/hybird-app",
+    "package-win": "electron-packager . hybird-app --overwrite --ignore=node_modules/* --platform=win32 --arch=x64 --app-version=1.0.0 --out=../electron-dist/hybird-app",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=img/icon.icns --prune=true --out=../electron-dist",
     "package-linux": "electron-packager . hybird-app --overwrite --asar=true --platform=linux --arch=x64 --icon=img/icon.png --prune=true --out=../electron-dist",
     "package": "asar pack hybird-app-win32-x64/resources/app hybird-app-win32-x64/resources/app.asar"

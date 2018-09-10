@@ -121,6 +121,9 @@ openDevTools決定是否預設開啟偵錯工具
 -   Cat Meows Sounds: <http://www.orangefreesounds.com/cat-meows-sounds/>
 -   Cat Sounds: <http://www.orangefreesounds.com/cat-sounds/>
 
+## Privay Policy Template
+-   <https://app-privacy-policy-generator.firebaseapp.com/>
+
 ----
 
 # 感謝

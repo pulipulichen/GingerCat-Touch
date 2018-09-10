@@ -21,6 +21,7 @@ Touching the Ginger cat to hear he mew.
     *   Install shorten URL: <https://bit.ly/2MfXCRH>
       ![Mobile APP](https://chart.googleapis.com/chart?chs=116x116&cht=qr&chl=https%3A%2F%2Fbuild.phonegap.com%2Fapps%2F3297046%2Finstall%2FwjJ1oeiQ5QMRpjZ6vngR&chld=L|1&choe=UTF-8)
     *   Homepage: <https://build.phonegap.com/apps/3297046/share> <https://build.phonegap.com/apps/>
+    *   Privacy policy: <https://pulipulichen.github.io/GingerCat-Touch/privacy_policy.html>
 
 # Pacakge
 
@@ -122,7 +123,7 @@ openDevTools決定是否預設開啟偵錯工具
 -   Cat Sounds: <http://www.orangefreesounds.com/cat-sounds/>
 
 ## Privay Policy Template
--   <https://app-privacy-policy-generator.firebaseapp.com/>
+-   App Privacy Policy Generator: <https://app-privacy-policy-generator.firebaseapp.com/>
 
 ----
 

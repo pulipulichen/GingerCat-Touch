@@ -12,9 +12,9 @@ Touching the Ginger cat to hear he mew.
     *   <https://pulipulichen.github.io/GingerCat-Touch/www/>
     *   <https://bit.ly/2Me5seP>
 -   Windows x64
-    *   Download: <https://drive.google.com/file/d/1HRjAkyXuqqBhaLRoEEe7cPKjpGdj3Wbv/view?usp=sharing>
+    *   Download: <https://drive.google.com/file/d/1a6BvxOecz9izGz5UFxZetxwgD5TmsGX6/view?usp=sharing>
     *   Package by 7-zip: <https://portableapps.com/apps/utilities/7-zip_portable>
-    *   Upload (for owner): <https://drive.google.com/open?id=1FV6eclqYY_4NBfPhLlPOQkZlCDwm4L0w>
+    *   Upload (for owner): <https://drive.google.com/open?id=1a6BvxOecz9izGz5UFxZetxwgD5TmsGX6>
 -   Mobile APP:
     *   Install: <https://build.phonegap.com/apps/3297046/install>
     *   APK: <https://build.phonegap.com/apps/3297046/download/android>

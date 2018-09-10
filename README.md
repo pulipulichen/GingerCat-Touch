@@ -17,6 +17,7 @@ Touching the Ginger cat to hear he mew.
     *   Upload (for owner): <https://drive.google.com/open?id=1FV6eclqYY_4NBfPhLlPOQkZlCDwm4L0w>
 -   Mobile APP:
     *   Install: <https://build.phonegap.com/apps/3297046/install>
+    *   APK: <https://build.phonegap.com/apps/3297046/download/android>
     *   Install shorten URL: <https://bit.ly/2MfXCRH>
       ![Mobile APP](https://chart.googleapis.com/chart?chs=116x116&cht=qr&chl=https%3A%2F%2Fbuild.phonegap.com%2Fapps%2F3297046%2Finstall%2FwjJ1oeiQ5QMRpjZ6vngR&chld=L|1&choe=UTF-8)
     *   Homepage: <https://build.phonegap.com/apps/3297046/share>

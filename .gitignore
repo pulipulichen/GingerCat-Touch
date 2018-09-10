@@ -8,3 +8,4 @@
 /www/npm-debug.log
 /www/release-builds/
 /.monaca
+/electron-dist

@@ -28,7 +28,8 @@ Touching the Ginger cat to hear he mew.
 -   Open `./www/index.html` in your browser.
 
 ## Electron
--   node `./dev-bin/package.js`
+-   `./dev-bin/0-npm_package_install.bat`
+-   node `./dev-bin/1-package.js`
 
 ## Phonegap Build
 -   Tutorial: <http://blog.pulipuli.info/2017/10/phonegapapp-phoengap-web-template-wrap.html>

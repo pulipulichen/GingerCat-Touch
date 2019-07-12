@@ -1700,9 +1700,9 @@ expand-tilde@^1.2.1, expand-tilde@^1.2.2:
   dependencies:
     os-homedir "^1.0.1"
 
-express@2.5.x:
-  version "2.5.11"
-  resolved "https://registry.yarnpkg.com/express/-/express-2.5.11.tgz#4ce8ea1f3635e69e49f0ebb497b6a4b0a51ce6f0"
+express@3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/express/-/express-3.11.0.tgz#4ce8ea1f3635e69e49f0ebb497b6a4b0a51ce6f0"
   dependencies:
     connect "1.x"
     mime "1.2.4"
@@ -1908,7 +1908,7 @@ fstream-ignore@~1.0.5:
   dependencies:
     fstream "^1.0.0"
     inherits "2"
-    minimatch "^3.0.0"
+    minimatch "^3.0.2"
 
 fstream@^1.0.0, fstream@^1.0.12, fstream@~1.0.10:
   version "1.0.12"
@@ -1999,7 +1999,7 @@ glob-stream@^3.1.5:
   dependencies:
     glob "^4.3.1"
     glob2base "^0.0.12"
-    minimatch "^2.0.1"
+    minimatch "^3.0.2"
     ordered-read-streams "^0.1.0"
     through2 "^0.6.1"
     unique-stream "^1.0.0"
@@ -2022,7 +2022,7 @@ glob@4.x, glob@^4.3.1:
   dependencies:
     inflight "^1.0.4"
     inherits "2"
-    minimatch "^2.0.1"
+    minimatch "^3.0.2"
     once "^1.3.0"
 
 glob@7.0.x:
@@ -2042,7 +2042,7 @@ glob@^5.0.14:
   dependencies:
     inflight "^1.0.4"
     inherits "2"
-    minimatch "2 || 3"
+    minimatch "^3.0.2"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -2053,7 +2053,7 @@ glob@^7.0.3, glob@^7.0.5, glob@^7.1.2:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
     inherits "2"
-    minimatch "^3.0.4"
+    minimatch "^3.0.2"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -2064,7 +2064,7 @@ glob@^7.1.3:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
     inherits "2"
-    minimatch "^3.0.4"
+    minimatch "^3.0.2"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -2074,14 +2074,14 @@ glob@~3.1.21:
   dependencies:
     graceful-fs "~1.2.0"
     inherits "1"
-    minimatch "~0.2.11"
+    minimatch "^3.0.2"
 
 glob@~3.2.9:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/glob/-/glob-3.2.11.tgz#4a973f635b9190f715d10987d5c00fd2815ebe3d"
   dependencies:
     inherits "2"
-    minimatch "0.3"
+    minimatch "^3.0.2"
 
 global-modules@^0.2.3:
   version "0.2.3"
@@ -2123,7 +2123,7 @@ globule@~0.1.0:
   dependencies:
     glob "~3.1.21"
     lodash "~1.0.1"
-    minimatch "~0.2.11"
+    minimatch "^3.0.2"
 
 glogg@^1.0.0:
   version "1.0.0"
@@ -2198,7 +2198,7 @@ gulp-order@^1.0.6:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/gulp-order/-/gulp-order-1.1.1.tgz#0b8ef0833235bed65f1efbc79c6aed97b1db41e9"
   dependencies:
-    minimatch "~0.2.14"
+    minimatch "^3.0.2"
     through "~2.3.4"
 
 gulp-plumber@^0.6.1:
@@ -2828,7 +2828,7 @@ less@^1.7.4:
     graceful-fs "~3.0.2"
     mime "~1.2.11"
     mkdirp "~0.5.0"
-    request "~2.40.0"
+    request "~2.68.0"
     source-map "0.1.x"
 
 liftoff@^2.1.0:
@@ -2865,7 +2865,7 @@ localtunnel@1.8.2:
   dependencies:
     debug "2.2.0"
     openurl "1.1.0"
-    request "2.78.0"
+    request "2.68.0"
     yargs "3.29.0"
 
 lodash._basecopy@^3.0.0:
@@ -3180,37 +3180,11 @@ mime@~1.2.11:
   version "1.2.11"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.2.11.tgz#58203eed86e3a5ef17aed2b7d9ebd47f0a60dd10"
 
-minimatch@0.3, minimatch@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-0.3.0.tgz#275d8edaac4f1bb3326472089e7949c8394699dd"
-  dependencies:
-    lru-cache "2"
-    sigmund "~1.0.0"
-
-"minimatch@2 || 3", minimatch@^3.0.0, minimatch@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
-  dependencies:
-    brace-expansion "^1.1.7"
-
-minimatch@^2.0.1:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-2.0.10.tgz#8d087c39c6b38c001b97fca7ce6d0e1e80afbac7"
-  dependencies:
-    brace-expansion "^1.0.0"
-
 minimatch@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   dependencies:
     brace-expansion "^1.0.0"
-
-minimatch@~0.2.11, minimatch@~0.2.14:
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-0.2.14.tgz#c74e780574f63c6f9a090e90efbe6ef53a6a756a"
-  dependencies:
-    lru-cache "2"
-    sigmund "~1.0.0"
 
 minimist@0.0.8:
   version "0.0.8"
@@ -3252,7 +3226,7 @@ multimatch@^0.3.0:
   dependencies:
     array-differ "^0.1.0"
     array-union "^0.1.0"
-    minimatch "^0.3.0"
+    minimatch "^3.0.2"
 
 multimatch@^2.0.0:
   version "2.1.0"
@@ -3261,7 +3235,7 @@ multimatch@^2.0.0:
     array-differ "^1.0.0"
     array-union "^1.0.1"
     arrify "^1.0.0"
-    minimatch "^3.0.0"
+    minimatch "^3.0.2"
 
 multipipe@^0.1.0, multipipe@^0.1.2:
   version "0.1.2"
@@ -4203,25 +4177,6 @@ request@^2.79.0:
     tunnel-agent "~0.6.0"
     uuid "^3.0.0"
 
-request@~2.40.0:
-  version "2.40.0"
-  resolved "https://registry.yarnpkg.com/request/-/request-2.40.0.tgz#4dd670f696f1e6e842e66b4b5e839301ab9beb67"
-  dependencies:
-    forever-agent "~0.5.0"
-    json-stringify-safe "~5.0.0"
-    mime-types "~1.0.1"
-    node-uuid "~1.4.0"
-    qs "~1.0.0"
-  optionalDependencies:
-    aws-sign2 "~0.5.0"
-    form-data "~0.1.0"
-    hawk "1.1.1"
-    http-signature "~0.10.0"
-    oauth-sign "~0.3.0"
-    stringstream "~0.0.4"
-    tough-cookie ">=0.12.0"
-    tunnel-agent "~0.6.0"
-
 require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
@@ -5079,7 +5034,7 @@ weinre@^2.0.0-pre-I0Z7U9OV:
   version "2.0.0-pre-I0Z7U9OV"
   resolved "https://registry.yarnpkg.com/weinre/-/weinre-2.0.0-pre-I0Z7U9OV.tgz#fef8aa223921f7b40bbbbd4c3ed4302f6fd0a813"
   dependencies:
-    express "2.5.x"
+    express "3.11.0"
     nopt "3.0.x"
     underscore "1.7.x"
 

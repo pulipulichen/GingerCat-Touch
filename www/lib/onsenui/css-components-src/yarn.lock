@@ -4119,7 +4119,7 @@ request@2.78.0:
     oauth-sign "~0.8.1"
     qs "~6.3.0"
     stringstream "~0.0.4"
-    tough-cookie "~2.3.0"
+    tough-cookie "~> 2.3.3"
     tunnel-agent "~0.6.0"
 
 request@^2.79.0:
@@ -4143,7 +4143,7 @@ request@^2.79.0:
     oauth-sign "~0.8.1"
     qs "~6.3.0"
     stringstream "~0.0.4"
-    tough-cookie "~2.3.0"
+    tough-cookie "~> 2.3.3"
     tunnel-agent "~0.6.0"
     uuid "^3.0.0"
 
@@ -4829,9 +4829,9 @@ to-fast-properties@^1.0.1, to-fast-properties@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
 
-tough-cookie@>=0.12.0, tough-cookie@~2.3.0:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.4.tgz#ec60cee38ac675063ffc97a5c18970578ee83655"
+tough-cookie@~> 2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.3.tgz#ec60cee38ac675063ffc97a5c18970578ee83655"
   dependencies:
     punycode "^1.4.1"
 
